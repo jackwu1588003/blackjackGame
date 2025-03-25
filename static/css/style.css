@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a6c35;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+.game-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.info-panel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.dealer-area,
+.player-area {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.card {
+    width: 100px;
+    height: 140px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: black;
+    position: relative;
+}
+
+.card.red {
+    color: red;
+}
+
+.card.face-down {
+    background-image: url('../images/card-back.png');
+    background-size: cover;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.message {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    min-height: 30px;
+}
+
+.betting-controls,
+.game-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
